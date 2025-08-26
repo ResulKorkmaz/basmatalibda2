@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  direction: rtl;
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+body {
+  font-family: 'Noto Sans Arabic', sans-serif;
+  line-height: 1.6;
+}
+
+.arabic-text {
+  font-family: 'Amiri', serif;
+}
+
+.brand-bg {
+  background-color: #1e293b;
+}
+
+.section-padding {
+  @apply py-16 px-4 sm:px-6 lg:px-8;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto;
+}
+
+.card-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* RTL specific utilities */
+.rtl-space-x-reverse > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+.rtl-divide-x-reverse > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 1;
+}
