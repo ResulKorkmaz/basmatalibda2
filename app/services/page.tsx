@@ -26,59 +26,59 @@ export default function ServicesPage() {
       <Header />
       <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-32 pb-16 bg-gray-50">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Text Content - Left Side */}
-            <div className="space-y-8 order-2 lg:order-1">
+      <section className="relative min-h-[100vh] flex items-center pt-24 pb-8 md:pt-32 md:pb-16 bg-gray-50">
+        <div className="container-custom px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
+            {/* Text Content - First on mobile, Left on desktop */}
+            <div className="space-y-6 md:space-y-8 order-1">
               {/* Breadcrumb */}
-              <nav className="flex mb-6">
-                <ol className="flex items-center space-x-2 text-sm">
+              <nav className="flex mb-4 md:mb-6">
+                <ol className="flex items-center space-x-2 text-xs md:text-sm">
                   <li>
                     <Link href="/" className="text-gray-600 hover:text-brand-800 transition-colors">
                       الرئيسية
                     </Link>
                   </li>
-                  <ArrowRightIcon className="h-4 w-4 text-gray-400 mx-2" />
+                  <ArrowRightIcon className="h-3 w-3 md:h-4 md:w-4 text-gray-400 mx-1 md:mx-2" />
                   <li className="text-brand-800 font-medium">جميع الخدمات</li>
                 </ol>
               </nav>
 
               {/* Service Badge */}
-              <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-800 px-4 py-2 rounded-full text-sm font-semibold">
-                <span className="w-2 h-2 bg-brand-600 rounded-full"></span>
+              <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-800 px-3 py-2 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold">
+                <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-600 rounded-full"></span>
                 خدماتنا المتكاملة
               </div>
 
               {/* Title */}
-              <div className="space-y-4">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold arabic-text text-gray-900 leading-tight">
+              <div className="space-y-3 md:space-y-4 text-center lg:text-right">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold arabic-text text-gray-900 leading-tight">
                   جميع خدماتنا
                   <span className="block text-brand-800">المتخصصة</span>
                 </h1>
-                <p className="text-xl md:text-2xl leading-relaxed text-gray-600">
+                <p className="text-base md:text-xl lg:text-2xl leading-relaxed text-gray-600">
                   نقدم مجموعة شاملة من الخدمات المتخصصة في مجال البناء والترميم والديكور
                   بأعلى معايير الجودة والاحترافية في الرياض
                 </p>
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-6 border-t border-b border-gray-200">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 py-4 md:py-6 border-t border-b border-gray-200">
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-brand-800">6</div>
-                  <div className="text-sm text-gray-600">خدمات متخصصة</div>
+                  <div className="text-lg md:text-2xl lg:text-3xl font-bold text-brand-800">6</div>
+                  <div className="text-xs md:text-sm text-gray-600">خدمات متخصصة</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-brand-800">+500</div>
-                  <div className="text-sm text-gray-600">مشروع مكتمل</div>
+                  <div className="text-lg md:text-2xl lg:text-3xl font-bold text-brand-800">+500</div>
+                  <div className="text-xs md:text-sm text-gray-600">مشروع مكتمل</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-brand-800">+300</div>
-                  <div className="text-sm text-gray-600">عميل راضٍ</div>
+                  <div className="text-lg md:text-2xl lg:text-3xl font-bold text-brand-800">+300</div>
+                  <div className="text-xs md:text-sm text-gray-600">عميل راضٍ</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-brand-800">10+</div>
-                  <div className="text-sm text-gray-600">سنوات خبرة</div>
+                  <div className="text-lg md:text-2xl lg:text-3xl font-bold text-brand-800">10+</div>
+                  <div className="text-xs md:text-sm text-gray-600">سنوات خبرة</div>
                 </div>
               </div>
 
@@ -105,14 +105,14 @@ export default function ServicesPage() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:0536095153"
+                  href="tel:0576095153"
                   className="inline-flex items-center justify-center gap-3 bg-brand-800 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-900 transition-all duration-300 transform hover:scale-105 card-shadow"
                 >
                   <PhoneIcon className="h-6 w-6" />
                   استشارة مجانية
                 </a>
                 <a
-                  href="https://wa.me/966536095153"
+                  href="https://wa.me/966576095153"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 border-2 border-brand-800 text-brand-800 bg-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-800 hover:text-white transition-all duration-300 transform hover:scale-105 card-shadow"
@@ -295,7 +295,7 @@ export default function ServicesPage() {
                       <ArrowRightIcon className="h-4 w-4" />
                     </Link>
                     <a
-                      href="tel:0536095153"
+                      href="tel:0576095153"
                       className="p-3 border-2 border-gray-200 rounded-xl hover:border-brand-800 hover:text-brand-800 transition-all duration-300 group/phone"
                     >
                       <PhoneIcon className="h-5 w-5 group-hover/phone:rotate-12 transition-transform duration-300" />
@@ -324,14 +324,14 @@ export default function ServicesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0536095153"
+              href="tel:0576095153"
               className="inline-flex items-center justify-center gap-3 bg-white text-brand-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               <PhoneIcon className="h-6 w-6" />
-              اتصل بنا الآن: 0536095153
+              اتصل بنا الآن: 0576095153
             </a>
             <a
-              href="https://wa.me/966536095153"
+              href="https://wa.me/966576095153"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 border-2 border-white text-white bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-brand-800 transition-all duration-300 transform hover:scale-105"

@@ -17,11 +17,11 @@ export default function Header() {
   return (
     <header className="bg-white/95 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-gray-100">
       <nav className="container-custom" aria-label="Global">
-        <div className="flex items-center justify-between py-4 lg:py-6 px-6 lg:px-8">
+        <div className="flex items-center justify-between py-3 lg:py-6 px-4 sm:px-6 lg:px-8">
           {/* Logo Section */}
           <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5 flex items-center gap-3 group">
-              <div className="relative w-12 h-12 lg:w-14 lg:h-14">
+            <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2 sm:gap-3 group">
+              <div className="relative w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14">
                 <Image
                   src="/logo.png"
                   alt="مؤسسة مكارم الجنوب للترميمات والبناء"
@@ -29,11 +29,12 @@ export default function Header() {
                   className="object-contain group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <div className="hidden sm:block">
-                <div className="text-xl lg:text-2xl font-bold text-brand-800 arabic-text leading-tight">
-                  مؤسسة مكارم الجنوب
+              <div className="block">
+                <div className="text-base sm:text-xl lg:text-2xl font-bold text-brand-800 arabic-text leading-tight">
+                  <span className="sm:hidden">مكارم الجنوب</span>
+                  <span className="hidden sm:inline">مؤسسة مكارم الجنوب</span>
                 </div>
-                <div className="text-sm lg:text-base text-brand-600 font-medium">
+                <div className="text-xs sm:text-sm lg:text-base text-brand-600 font-medium">
                   للترميمات والبناء
                 </div>
               </div>
@@ -69,12 +70,12 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-              href="tel:0536095153"
+              href="tel:0576095153"
               className="flex items-center gap-3 text-white bg-brand-800 px-6 py-3 rounded-xl font-semibold hover:bg-brand-900 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <PhoneIcon className="h-5 w-5" />
               <span className="hidden xl:inline">اتصل الآن:</span>
-              <span>0536095153</span>
+              <span>0576095153</span>
             </a>
           </div>
         </div>
@@ -140,15 +141,15 @@ export default function Header() {
                 {/* Mobile CTA Section */}
                 <div className="py-6 space-y-4">
                   <a
-                    href="tel:0536095153"
+                    href="tel:0576095153"
                     className="flex items-center justify-center gap-3 rounded-xl bg-brand-800 px-6 py-4 text-base font-semibold text-white hover:bg-brand-900 transition-all duration-200 transform hover:scale-105"
                   >
                     <PhoneIcon className="h-5 w-5" />
-                    اتصل الآن: 0536095153
+                    اتصل الآن: 0576095153
                   </a>
                   
                   <a
-                    href="https://wa.me/966536095153"
+                    href="https://wa.me/966576095153"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 rounded-xl bg-green-600 px-6 py-4 text-base font-semibold text-white hover:bg-green-700 transition-all duration-200 transform hover:scale-105"

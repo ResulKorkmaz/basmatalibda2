@@ -47,7 +47,7 @@ export default function ContactSection() {
     // Create WhatsApp message
     const message = `السلام عليكم، أرغب في طلب خدمة:\n\nالاسم: ${formData.name}\nرقم الهاتف: ${formData.phone}\nنوع الخدمة: ${formData.service}\nتفاصيل إضافية: ${formData.message}`
     
-    const whatsappUrl = `https://wa.me/966536095153?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/966576095153?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
     
     setIsSubmitting(false)
@@ -82,8 +82,8 @@ export default function ContactSection() {
     {
       icon: <PhoneIcon className="h-8 w-8" />,
       title: 'رقم الهاتف',
-      value: '0536095153',
-      action: 'tel:0536095153',
+      value: '0576095153',
+      action: 'tel:0576095153',
       description: 'متاحون 24/7 لاستقبال اتصالاتكم',
       color: 'from-blue-500 to-blue-600',
       bgColor: 'from-blue-50 to-blue-100'
@@ -109,8 +109,8 @@ export default function ContactSection() {
     {
       icon: <EnvelopeIcon className="h-8 w-8" />,
       title: 'واتساب',
-      value: '0536095153',
-      action: 'https://wa.me/966536095153',
+      value: '0576095153',
+      action: 'https://wa.me/966576095153',
       description: 'تواصل سريع عبر الواتساب',
       color: 'from-purple-500 to-purple-600',
       bgColor: 'from-purple-50 to-purple-100'
@@ -137,7 +137,7 @@ export default function ContactSection() {
             "@type": "LocalBusiness",
             "name": "Basmatalibda Construction Services",
             "description": "Professional construction, renovation and decoration services in Riyadh",
-            "telephone": "0536095153",
+            "telephone": "0576095153",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Riyadh",
@@ -151,7 +151,7 @@ export default function ContactSection() {
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "0536095153",
+              "telephone": "0576095153",
               "contactType": "customer service",
               "availableLanguage": "Arabic"
             }
@@ -379,31 +379,31 @@ export default function ContactSection() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="text-center">
-            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 shadow-lg">
-              <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+          <div className="text-center px-4">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl md:rounded-3xl p-6 md:p-8 border border-gray-200/50 shadow-lg">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
                 لماذا يثق بنا العملاء؟
               </h3>
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-center">
                 <div className="space-y-2">
-                  <div className="text-3xl lg:text-4xl">⚡</div>
-                  <p className="font-bold text-gray-900">رد سريع</p>
-                  <p className="text-sm text-gray-600">خلال دقائق</p>
+                  <div className="text-2xl md:text-3xl lg:text-4xl">⚡</div>
+                  <p className="font-bold text-gray-900 text-sm md:text-base">رد سريع</p>
+                  <p className="text-xs md:text-sm text-gray-600">خلال دقائق</p>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-3xl lg:text-4xl">🏆</div>
-                  <p className="font-bold text-gray-900">جودة عالية</p>
-                  <p className="text-sm text-gray-600">معايير احترافية</p>
+                  <div className="text-2xl md:text-3xl lg:text-4xl">🏆</div>
+                  <p className="font-bold text-gray-900 text-sm md:text-base">جودة عالية</p>
+                  <p className="text-xs md:text-sm text-gray-600">معايير احترافية</p>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-3xl lg:text-4xl">💯</div>
-                  <p className="font-bold text-gray-900">ضمان شامل</p>
-                  <p className="text-sm text-gray-600">على جميع الأعمال</p>
+                  <div className="text-2xl md:text-3xl lg:text-4xl">💯</div>
+                  <p className="font-bold text-gray-900 text-sm md:text-base">ضمان شامل</p>
+                  <p className="text-xs md:text-sm text-gray-600">على جميع الأعمال</p>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-3xl lg:text-4xl">🎯</div>
-                  <p className="font-bold text-gray-900">أسعار عادلة</p>
-                  <p className="text-sm text-gray-600">بدون مفاجآت</p>
+                  <div className="text-2xl md:text-3xl lg:text-4xl">🎯</div>
+                  <p className="font-bold text-gray-900 text-sm md:text-base">أسعار عادلة</p>
+                  <p className="text-xs md:text-sm text-gray-600">بدون مفاجآت</p>
                 </div>
               </div>
             </div>

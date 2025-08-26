@@ -135,11 +135,11 @@ export default function Footer() {
                 </h4>
                 <div className="space-y-3">
                   <a 
-                    href="tel:0536095153" 
+                    href="tel:0576095153" 
                     className="flex items-center gap-3 text-gray-300 hover:text-brand-400 transition-colors duration-200 group"
                   >
                     <PhoneIcon className="h-5 w-5 group-hover:scale-110 transition-transform duration-200" />
-                    <span>0536095153</span>
+                    <span>0576095153</span>
                   </a>
                   <div className="flex items-center gap-3 text-gray-300">
                     <MapPinIcon className="h-5 w-5" />
@@ -152,7 +152,7 @@ export default function Footer() {
                   
                   {/* WhatsApp Button */}
                   <a
-                    href="https://wa.me/966536095153"
+                    href="https://wa.me/966576095153"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all duration-200 transform hover:scale-105 mt-4"
@@ -185,14 +185,14 @@ export default function Footer() {
                 {/* Social Links */}
                 <div className="flex items-center gap-4">
                   <a
-                    href="tel:0536095153"
+                    href="tel:0576095153"
                     className="w-10 h-10 bg-gray-800 hover:bg-brand-600 rounded-full flex items-center justify-center transition-all duration-200 transform hover:scale-110"
                     title="اتصل بنا"
                   >
                     <PhoneIcon className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://wa.me/966536095153"
+                    href="https://wa.me/966576095153"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-800 hover:bg-green-600 rounded-full flex items-center justify-center transition-all duration-200 transform hover:scale-110"

@@ -9,60 +9,60 @@ export default function ServiceNotFound() {
       <Header />
       <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-32 pb-16 bg-gray-50">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Text Content - Left Side */}
-            <div className="space-y-8 order-2 lg:order-1">
+      <section className="relative min-h-[100vh] flex items-center pt-24 pb-8 md:pt-32 md:pb-16 bg-gray-50">
+        <div className="container-custom px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
+            {/* Text Content - First on mobile, Left on desktop */}
+            <div className="space-y-6 md:space-y-8 order-1">
               {/* Breadcrumb */}
-              <nav className="flex mb-6">
-                <ol className="flex items-center space-x-2 text-sm">
+              <nav className="flex mb-4 md:mb-6">
+                <ol className="flex items-center space-x-2 text-xs md:text-sm">
                   <li>
                     <Link href="/" className="text-gray-600 hover:text-brand-800 transition-colors">
                       الرئيسية
                     </Link>
                   </li>
-                  <ArrowRightIcon className="h-4 w-4 text-gray-400 mx-2" />
+                  <ArrowRightIcon className="h-3 w-3 md:h-4 md:w-4 text-gray-400 mx-1 md:mx-2" />
                   <li>
                     <Link href="/services" className="text-gray-600 hover:text-brand-800 transition-colors">
                       الخدمات
                     </Link>
                   </li>
-                  <ArrowRightIcon className="h-4 w-4 text-gray-400 mx-2" />
-                  <li className="text-brand-800 font-medium">صفحة غير موجودة</li>
+                  <ArrowRightIcon className="h-3 w-3 md:h-4 md:w-4 text-gray-400 mx-1 md:mx-2" />
+                  <li className="text-brand-800 font-medium truncate max-w-[120px] md:max-w-none">صفحة غير موجودة</li>
                 </ol>
               </nav>
 
               {/* Error Badge */}
-              <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold">
-                <span className="text-2xl">🔍</span>
+              <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-3 py-2 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold">
+                <span className="text-lg md:text-2xl">🔍</span>
                 خطأ 404
               </div>
 
               {/* Title */}
-              <div className="space-y-4">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold arabic-text text-gray-900 leading-tight">
+              <div className="space-y-3 md:space-y-4 text-center lg:text-right">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold arabic-text text-gray-900 leading-tight">
                   الخدمة غير موجودة
                 </h1>
-                <p className="text-xl md:text-2xl leading-relaxed text-gray-600">
+                <p className="text-base md:text-xl lg:text-2xl leading-relaxed text-gray-600">
                   عذراً، لم نتمكن من العثور على الخدمة التي تبحث عنها. 
                   يمكنك العودة إلى الصفحة الرئيسية أو تصفح خدماتنا الأخرى.
                 </p>
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 py-6 border-t border-b border-gray-200">
+              <div className="grid grid-cols-3 gap-3 md:gap-6 py-4 md:py-6 border-t border-b border-gray-200">
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-brand-800">6</div>
-                  <div className="text-sm text-gray-600">خدمات متاحة</div>
+                  <div className="text-lg md:text-2xl lg:text-3xl font-bold text-brand-800">6</div>
+                  <div className="text-xs md:text-sm text-gray-600">خدمات متاحة</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-brand-800">24/7</div>
-                  <div className="text-sm text-gray-600">دعم فني</div>
+                  <div className="text-lg md:text-2xl lg:text-3xl font-bold text-brand-800">24/7</div>
+                  <div className="text-xs md:text-sm text-gray-600">دعم فني</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-brand-800">100%</div>
-                  <div className="text-sm text-gray-600">ضمان الجودة</div>
+                  <div className="text-lg md:text-2xl lg:text-3xl font-bold text-brand-800">100%</div>
+                  <div className="text-xs md:text-sm text-gray-600">ضمان الجودة</div>
                 </div>
               </div>
 

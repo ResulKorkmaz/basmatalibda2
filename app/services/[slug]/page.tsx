@@ -67,7 +67,7 @@ export default function ServicePage({ params }: ServicePageProps) {
     "provider": {
       "@type": "Organization",
       "name": "مؤسسة مكارم الجنوب للترميمات والبناء",
-      "telephone": "0536095153",
+      "telephone": "0576095153",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "الرياض",
@@ -93,96 +93,96 @@ export default function ServicePage({ params }: ServicePageProps) {
       <Header />
       <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-32 pb-16 bg-gray-50">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Text Content - Left Side */}
-            <div className="space-y-8 order-2 lg:order-1">
+      <section className="relative min-h-[100vh] flex items-center pt-24 pb-8 md:pt-32 md:pb-16 bg-gray-50">
+        <div className="container-custom px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
+            {/* Text Content - First on mobile, Left on desktop */}
+            <div className="space-y-6 md:space-y-8 order-1">
               {/* Breadcrumb */}
-              <nav className="flex mb-6">
-                <ol className="flex items-center space-x-2 text-sm">
+              <nav className="flex mb-4 md:mb-6">
+                <ol className="flex items-center space-x-2 text-xs md:text-sm">
                   <li>
                     <Link href="/" className="text-gray-600 hover:text-brand-800 transition-colors">
                       الرئيسية
                     </Link>
                   </li>
-                  <ArrowRightIcon className="h-4 w-4 text-gray-400 mx-2" />
+                  <ArrowRightIcon className="h-3 w-3 md:h-4 md:w-4 text-gray-400 mx-1 md:mx-2" />
                   <li>
                     <Link href="/services" className="text-gray-600 hover:text-brand-800 transition-colors">
                       الخدمات
                     </Link>
                   </li>
-                  <ArrowRightIcon className="h-4 w-4 text-gray-400 mx-2" />
-                  <li className="text-brand-800 font-medium">{service.title}</li>
+                  <ArrowRightIcon className="h-3 w-3 md:h-4 md:w-4 text-gray-400 mx-1 md:mx-2" />
+                  <li className="text-brand-800 font-medium truncate max-w-[120px] md:max-w-none">{service.title}</li>
                 </ol>
               </nav>
 
               {/* Service Badge */}
-              <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-800 px-4 py-2 rounded-full text-sm font-semibold">
-                <span className="text-2xl">{service.icon}</span>
+              <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-800 px-3 py-2 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold">
+                <span className="text-lg md:text-2xl">{service.icon}</span>
                 {service.badge}
               </div>
 
               {/* Title */}
-              <div className="space-y-4">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold arabic-text text-gray-900 leading-tight">
+              <div className="space-y-3 md:space-y-4 text-center lg:text-right">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold arabic-text text-gray-900 leading-tight">
                   {service.title}
                 </h1>
-                <p className="text-xl md:text-2xl leading-relaxed text-gray-600">
+                <p className="text-base md:text-xl lg:text-2xl leading-relaxed text-gray-600">
                   {service.description}
                 </p>
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 py-6 border-t border-b border-gray-200">
+              <div className="grid grid-cols-3 gap-3 md:gap-6 py-4 md:py-6 border-t border-b border-gray-200">
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-brand-800">{service.stats}</div>
-                  <div className="text-sm text-gray-600">مشاريع منجزة</div>
+                  <div className="text-lg md:text-2xl lg:text-3xl font-bold text-brand-800">{service.stats}</div>
+                  <div className="text-xs md:text-sm text-gray-600">مشاريع منجزة</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-brand-800">⭐ 4.9</div>
-                  <div className="text-sm text-gray-600">تقييم العملاء</div>
+                  <div className="text-lg md:text-2xl lg:text-3xl font-bold text-brand-800">⭐ 4.9</div>
+                  <div className="text-xs md:text-sm text-gray-600">تقييم العملاء</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-brand-800">24/7</div>
-                  <div className="text-sm text-gray-600">دعم فني</div>
+                  <div className="text-lg md:text-2xl lg:text-3xl font-bold text-brand-800">24/7</div>
+                  <div className="text-xs md:text-sm text-gray-600">دعم فني</div>
                 </div>
               </div>
 
               {/* Key Features Preview */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3">
                 {service.features.slice(0, 4).map((feature, index) => (
-                  <div key={index} className="flex items-center gap-3 p-3 bg-white rounded-lg card-shadow">
-                    <CheckCircleIcon className="h-5 w-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700 font-medium">{feature}</span>
+                  <div key={index} className="flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-white rounded-lg card-shadow">
+                    <CheckCircleIcon className="h-4 w-4 md:h-5 md:w-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700 font-medium text-sm md:text-base">{feature}</span>
                   </div>
                 ))}
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col gap-3 md:gap-4">
                 <a
-                  href="tel:0536095153"
-                  className="inline-flex items-center justify-center gap-3 bg-brand-800 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-900 transition-all duration-300 transform hover:scale-105 card-shadow"
+                  href="tel:0576095153"
+                  className="inline-flex items-center justify-center gap-3 bg-brand-800 text-white px-6 py-3 md:px-8 md:py-4 rounded-lg md:rounded-xl font-bold text-base md:text-lg hover:bg-brand-900 transition-all duration-300 transform hover:scale-105 card-shadow"
                 >
-                  <PhoneIcon className="h-6 w-6" />
+                  <PhoneIcon className="h-5 w-5 md:h-6 md:w-6" />
                   اطلب الخدمة الآن
                 </a>
                 <a
-                  href="https://wa.me/966536095153"
+                  href="https://wa.me/966576095153"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 border-2 border-brand-800 text-brand-800 bg-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-800 hover:text-white transition-all duration-300 transform hover:scale-105 card-shadow"
+                  className="inline-flex items-center justify-center gap-3 border-2 border-brand-800 text-brand-800 bg-white px-6 py-3 md:px-8 md:py-4 rounded-lg md:rounded-xl font-bold text-base md:text-lg hover:bg-brand-800 hover:text-white transition-all duration-300 transform hover:scale-105 card-shadow"
                 >
-                  <span className="text-xl">💬</span>
+                  <span className="text-lg md:text-xl">💬</span>
                   تواصل واتساب
                 </a>
               </div>
             </div>
 
-            {/* Image - Right Side */}
-            <div className="relative order-1 lg:order-2">
-              <div className="relative h-96 md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden card-shadow group">
+            {/* Image - Second on mobile, Right on desktop */}
+            <div className="relative order-2">
+              <div className="relative h-80 md:h-[500px] lg:h-[600px] rounded-xl md:rounded-2xl overflow-hidden card-shadow group">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -310,7 +310,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center gap-3">
                     <PhoneIcon className="h-5 w-5" />
-                    <span>0536095153</span>
+                    <span>0576095153</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <ClockIcon className="h-5 w-5" />
@@ -324,13 +324,13 @@ export default function ServicePage({ params }: ServicePageProps) {
 
                 <div className="space-y-3">
                   <a
-                    href="tel:0536095153"
+                    href="tel:0576095153"
                     className="block w-full bg-white text-brand-800 px-6 py-3 rounded-xl font-bold text-center hover:bg-gray-100 transition-colors duration-200"
                   >
                     📞 اتصل الآن
                   </a>
                   <a
-                    href="https://wa.me/966536095153"
+                    href="https://wa.me/966576095153"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full border-2 border-white text-white px-6 py-3 rounded-xl font-bold text-center hover:bg-white hover:text-brand-800 transition-all duration-200"
@@ -418,14 +418,14 @@ export default function ServicePage({ params }: ServicePageProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0536095153"
+              href="tel:0576095153"
               className="inline-flex items-center justify-center gap-3 bg-white text-brand-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               <PhoneIcon className="h-6 w-6" />
               اتصل بنا الآن
             </a>
             <a
-              href="https://wa.me/966536095153"
+              href="https://wa.me/966576095153"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 border-2 border-white text-white bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-brand-800 transition-all duration-300 transform hover:scale-105"
