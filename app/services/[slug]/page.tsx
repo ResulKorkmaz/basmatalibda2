@@ -169,10 +169,11 @@ export default function ServicePage({ params }: ServicePageProps) {
                   اطلب الخدمة الآن
                 </a>
                 <a
-                  href="https://wa.me/966576095153"
+                  href="https://wa.me/966576095153?text=السلام%20عليكم%2C%20أرغب%20في%20الاستفسار%20عن%20هذه%20الخدمة"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 border-2 border-brand-800 text-brand-800 bg-white px-6 py-3 md:px-8 md:py-4 rounded-lg md:rounded-xl font-bold text-base md:text-lg hover:bg-brand-800 hover:text-white transition-all duration-300 transform hover:scale-105 card-shadow"
+                  title="تواصل معنا عبر الواتساب"
                 >
                   <span className="text-lg md:text-xl">💬</span>
                   تواصل واتساب

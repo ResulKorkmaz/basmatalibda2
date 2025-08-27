@@ -48,7 +48,16 @@ export default function ContactSection() {
     const message = `السلام عليكم، أرغب في طلب خدمة:\n\nالاسم: ${formData.name}\nرقم الهاتف: ${formData.phone}\nنوع الخدمة: ${formData.service}\nتفاصيل إضافية: ${formData.message}`
     
     const whatsappUrl = `https://wa.me/966576095153?text=${encodeURIComponent(message)}`
-    window.open(whatsappUrl, '_blank')
+    
+    // Debug WhatsApp URL
+    console.log('WhatsApp URL:', whatsappUrl)
+    
+    // Try to open WhatsApp
+    const newWindow = window.open(whatsappUrl, '_blank')
+    if (!newWindow) {
+      // Fallback if popup is blocked
+      window.location.href = whatsappUrl
+    }
     
     setIsSubmitting(false)
     
@@ -110,7 +119,7 @@ export default function ContactSection() {
       icon: <EnvelopeIcon className="h-8 w-8" />,
       title: 'واتساب',
       value: '0576095153',
-      action: 'https://wa.me/966576095153',
+      action: 'https://wa.me/966576095153?text=السلام%20عليكم%2C%20أرغب%20في%20التواصل%20معكم',
       description: 'تواصل سريع عبر الواتساب',
       color: 'from-purple-500 to-purple-600',
       bgColor: 'from-purple-50 to-purple-100'

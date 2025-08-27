@@ -112,10 +112,11 @@ export default function ServicesPage() {
                   استشارة مجانية
                 </a>
                 <a
-                  href="https://wa.me/966576095153"
+                  href="https://wa.me/966576095153?text=السلام%20عليكم%2C%20أرغب%20في%20الاستفسار%20عن%20الخدمات"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 border-2 border-brand-800 text-brand-800 bg-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-800 hover:text-white transition-all duration-300 transform hover:scale-105 card-shadow"
+                  title="تواصل معنا عبر الواتساب"
                 >
                   <span className="text-xl">💬</span>
                   تواصل واتساب

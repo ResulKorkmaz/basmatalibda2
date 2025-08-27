@@ -205,10 +205,11 @@ export default function Header() {
                   </a>
                   
                   <a
-                    href="https://wa.me/966576095153"
+                    href="https://wa.me/966576095153?text=السلام%20عليكم%20أرغب%20في%20التواصل%20معكم"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 rounded-xl bg-green-600 px-6 py-4 text-base font-semibold text-white hover:bg-green-700 transition-all duration-200 transform hover:scale-105"
+                    title="تواصل معنا عبر الواتساب"
                   >
                     <span className="text-lg">💬</span>
                     واتساب

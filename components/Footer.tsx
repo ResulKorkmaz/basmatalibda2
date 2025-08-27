@@ -152,10 +152,11 @@ export default function Footer() {
                   
                   {/* WhatsApp Button */}
                   <a
-                    href="https://wa.me/966576095153"
+                    href="https://wa.me/966576095153?text=السلام%20عليكم%2C%20أرغب%20في%20التواصل%20معكم"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all duration-200 transform hover:scale-105 mt-4"
+                    title="تواصل معنا عبر الواتساب"
                   >
                     <span className="text-lg">💬</span>
                     <span className="font-semibold">واتساب</span>
@@ -192,7 +193,7 @@ export default function Footer() {
                     <PhoneIcon className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://wa.me/966576095153"
+                    href="https://wa.me/966576095153?text=السلام%20عليكم%2C%20أرغب%20في%20التواصل%20معكم"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-800 hover:bg-green-600 rounded-full flex items-center justify-center transition-all duration-200 transform hover:scale-110"
