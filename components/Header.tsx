@@ -1,11 +1,39 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { Bars3Icon, XMarkIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  // Mobil menü açıldığında body scroll'unu engelle ve ESC tuşu ile kapatma
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      // Menü açıldığında scroll'u engelle
+      document.body.style.overflow = 'hidden'
+      document.body.style.position = 'fixed'
+      document.body.style.width = '100%'
+      
+      // ESC tuşu ile menüyü kapatma
+      const handleEscapeKey = (event: KeyboardEvent) => {
+        if (event.key === 'Escape') {
+          setMobileMenuOpen(false)
+        }
+      }
+      
+      document.addEventListener('keydown', handleEscapeKey)
+      
+      return () => {
+        document.removeEventListener('keydown', handleEscapeKey)
+      }
+    } else {
+      // Menü kapandığında scroll'u geri getir
+      document.body.style.overflow = ''
+      document.body.style.position = ''
+      document.body.style.width = ''
+    }
+  }, [mobileMenuOpen])
 
   const navigation = [
     { name: 'الرئيسية', href: '/' },
@@ -15,7 +43,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-white/95 backdrop-blur-md shadow-lg fixed w-full top-0 z-[999] border-b border-gray-100">
+    <header className="bg-white/95 backdrop-blur-md shadow-lg fixed w-full top-0 z-[9999] border-b border-gray-100">
       <nav className="container-custom" aria-label="Global">
         <div className="flex items-center justify-between py-3 lg:py-6 px-4 sm:px-6 lg:px-8">
           {/* Logo Section */}
@@ -86,12 +114,12 @@ export default function Header() {
         <div className="lg:hidden" role="dialog" aria-modal="true">
           {/* Backdrop */}
           <div 
-            className="fixed inset-0 z-[9999] bg-black/20 backdrop-blur-sm"
+            className="fixed inset-0 z-[99999] bg-black/20 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}
           ></div>
           
           {/* Menu Panel */}
-          <div className="fixed inset-y-0 right-0 z-[9999] w-full overflow-y-auto bg-white/95 backdrop-blur-md px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 shadow-2xl">
+          <div className="fixed inset-y-0 right-0 z-[99999] w-full overflow-y-auto bg-white/95 backdrop-blur-md px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 shadow-2xl">
             {/* Header */}
             <div className="flex items-center justify-between pb-6 border-b border-gray-200">
               <a href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
