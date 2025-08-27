@@ -105,7 +105,7 @@ export default function ServicesPage() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:0576095153"
+                  href="tel:+966576095153"
                   className="inline-flex items-center justify-center gap-3 bg-brand-800 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-900 transition-all duration-300 transform hover:scale-105 card-shadow"
                 >
                   <PhoneIcon className="h-6 w-6" />
@@ -295,7 +295,7 @@ export default function ServicesPage() {
                       <ArrowRightIcon className="h-4 w-4" />
                     </Link>
                     <a
-                      href="tel:0576095153"
+                      href="tel:+966576095153"
                       className="p-3 border-2 border-gray-200 rounded-xl hover:border-brand-800 hover:text-brand-800 transition-all duration-300 group/phone"
                     >
                       <PhoneIcon className="h-5 w-5 group-hover/phone:rotate-12 transition-transform duration-300" />
@@ -324,7 +324,7 @@ export default function ServicesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0576095153"
+              href="tel:+966576095153"
               className="inline-flex items-center justify-center gap-3 bg-white text-brand-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               <PhoneIcon className="h-6 w-6" />

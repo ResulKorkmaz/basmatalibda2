@@ -115,7 +115,7 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-              href="tel:0576095153"
+              href="tel:+966576095153"
               className="flex items-center gap-3 text-white bg-brand-800 px-6 py-3 rounded-xl font-semibold hover:bg-brand-900 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <PhoneIcon className="h-5 w-5" />
@@ -197,7 +197,7 @@ export default function Header() {
                 {/* Mobile CTA Section */}
                 <div className="py-6 px-6 space-y-4 bg-gray-50">
                   <a
-                    href="tel:0576095153"
+                    href="tel:+966576095153"
                     className="flex items-center justify-center gap-3 rounded-xl bg-brand-800 px-6 py-4 text-base font-semibold text-white hover:bg-brand-900 transition-all duration-200 transform hover:scale-105"
                   >
                     <PhoneIcon className="h-5 w-5" />

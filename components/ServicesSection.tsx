@@ -119,7 +119,7 @@ export default function ServicesSection() {
                 {/* CTA Buttons */}
                 <div className="flex gap-2 md:gap-3">
                   <a
-                    href="tel:0576095153"
+                    href="tel:+966576095153"
                     className="flex-1 inline-flex items-center justify-center gap-2 bg-brand-800 text-white px-4 py-3 md:px-6 md:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base hover:bg-brand-900 transition-all duration-300 transform hover:scale-105 group/cta"
                   >
                     <PhoneIcon className="h-4 w-4 md:h-5 md:w-5 group-hover/cta:rotate-12 transition-transform duration-300" />
@@ -153,7 +153,7 @@ export default function ServicesSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <a
-                href="tel:0576095153"
+                href="tel:+966576095153"
                 className="inline-flex items-center justify-center gap-3 bg-brand-800 text-white px-6 py-3 md:px-8 md:py-4 rounded-lg md:rounded-xl font-bold text-base md:text-lg hover:bg-brand-900 transition-all duration-300 transform hover:scale-105"
               >
                 <PhoneIcon className="h-5 w-5 md:h-6 md:w-6" />

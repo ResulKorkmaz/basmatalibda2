@@ -67,7 +67,7 @@ export default function ServicePage({ params }: ServicePageProps) {
     "provider": {
       "@type": "Organization",
       "name": "مؤسسة مكارم الجنوب للترميمات والبناء",
-      "telephone": "0576095153",
+      "telephone": "+966576095153",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "الرياض",
@@ -162,7 +162,7 @@ export default function ServicePage({ params }: ServicePageProps) {
               {/* CTA Buttons */}
               <div className="flex flex-col gap-3 md:gap-4">
                 <a
-                  href="tel:0576095153"
+                  href="tel:+966576095153"
                   className="inline-flex items-center justify-center gap-3 bg-brand-800 text-white px-6 py-3 md:px-8 md:py-4 rounded-lg md:rounded-xl font-bold text-base md:text-lg hover:bg-brand-900 transition-all duration-300 transform hover:scale-105 card-shadow"
                 >
                   <PhoneIcon className="h-5 w-5 md:h-6 md:w-6" />
@@ -324,7 +324,7 @@ export default function ServicePage({ params }: ServicePageProps) {
 
                 <div className="space-y-3">
                   <a
-                    href="tel:0576095153"
+                    href="tel:+966576095153"
                     className="block w-full bg-white text-brand-800 px-6 py-3 rounded-xl font-bold text-center hover:bg-gray-100 transition-colors duration-200"
                   >
                     📞 اتصل الآن
@@ -418,7 +418,7 @@ export default function ServicePage({ params }: ServicePageProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0576095153"
+              href="tel:+966576095153"
               className="inline-flex items-center justify-center gap-3 bg-white text-brand-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               <PhoneIcon className="h-6 w-6" />

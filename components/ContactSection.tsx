@@ -83,7 +83,7 @@ export default function ContactSection() {
       icon: <PhoneIcon className="h-8 w-8" />,
       title: 'رقم الهاتف',
       value: '0576095153',
-      action: 'tel:0576095153',
+      action: 'tel:+966576095153',
       description: 'متاحون 24/7 لاستقبال اتصالاتكم',
       color: 'from-blue-500 to-blue-600',
       bgColor: 'from-blue-50 to-blue-100'
@@ -137,7 +137,7 @@ export default function ContactSection() {
             "@type": "LocalBusiness",
             "name": "Basmatalibda Construction Services",
             "description": "Professional construction, renovation and decoration services in Riyadh",
-            "telephone": "0576095153",
+            "telephone": "+966576095153",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Riyadh",
@@ -151,7 +151,7 @@ export default function ContactSection() {
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "0576095153",
+              "telephone": "+966576095153",
               "contactType": "customer service",
               "availableLanguage": "Arabic"
             }

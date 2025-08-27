@@ -142,7 +142,7 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col gap-3 md:gap-4">
               <a
-                href="tel:0576095153"
+                href="tel:+966576095153"
                 className="flex items-center justify-center gap-3 bg-brand-800 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold text-base md:text-lg hover:bg-brand-900 transition-all duration-200 transform hover:scale-105 card-shadow"
               >
                 <PhoneIcon className="h-5 w-5 md:h-6 md:w-6" />
