@@ -40,7 +40,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section id="home" className="relative min-h-[100vh] flex items-center pt-24 pb-8 md:pt-32 md:pb-16 bg-gray-50 z-10">
+    <section id="home" className="relative min-h-[100vh] flex items-center pt-24 pb-8 md:pt-32 md:pb-16 bg-gray-50">
       <div className="container-custom px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
           {/* Image Slider - First on mobile, Left on desktop */}
