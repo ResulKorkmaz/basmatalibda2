@@ -14,12 +14,18 @@ export default function Header() {
     setMounted(true)
   }, [])
 
-  // Mobil menü açıldığında body scroll'unu engelle ve ESC tuşu ile kapatma
+  // Mobil menü açıldığında body scroll'unu tamamen engelle ve ESC tuşu ile kapatma
   useEffect(() => {
     if (mobileMenuOpen) {
-      // Menü açıldığında scroll'u engelle
+      // Mevcut scroll pozisyonunu kaydet
+      const scrollY = window.scrollY
+      
+      // Body'yi tamamen kilitle
       document.body.style.overflow = 'hidden'
       document.body.style.position = 'fixed'
+      document.body.style.top = `-${scrollY}px`
+      document.body.style.left = '0'
+      document.body.style.right = '0'
       document.body.style.width = '100%'
       
       // ESC tuşu ile menüyü kapatma
@@ -33,12 +39,16 @@ export default function Header() {
       
       return () => {
         document.removeEventListener('keydown', handleEscapeKey)
+        
+        // Menü kapandığında scroll pozisyonunu geri getir
+        document.body.style.overflow = ''
+        document.body.style.position = ''
+        document.body.style.top = ''
+        document.body.style.left = ''
+        document.body.style.right = ''
+        document.body.style.width = ''
+        window.scrollTo(0, scrollY)
       }
-    } else {
-      // Menü kapandığında scroll'u geri getir
-      document.body.style.overflow = ''
-      document.body.style.position = ''
-      document.body.style.width = ''
     }
   }, [mobileMenuOpen])
 
@@ -118,21 +128,28 @@ export default function Header() {
       
       {/* Mobile menu - Portal ile render */}
       {mounted && mobileMenuOpen && createPortal(
-        <div className="lg:hidden" role="dialog" aria-modal="true">
+        <div 
+          className="lg:hidden fixed inset-0 flex items-start justify-end"
+          role="dialog" 
+          aria-modal="true"
+          style={{ zIndex: 999999 }}
+        >
           {/* Backdrop */}
           <div 
-            className="fixed inset-0 bg-black/20 backdrop-blur-sm"
-            style={{ zIndex: 999999 }}
+            className="absolute inset-0 bg-black/30 mobile-menu-overlay transition-opacity duration-300 ease-out"
             onClick={() => setMobileMenuOpen(false)}
           ></div>
           
-          {/* Menu Panel */}
+          {/* Menu Panel - Modern slide-in */}
           <div 
-            className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-white/95 backdrop-blur-md px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 shadow-2xl"
-            style={{ zIndex: 999999 }}
+            className="relative w-full max-w-sm h-full bg-white shadow-2xl transform transition-transform duration-300 ease-out translate-x-0 overflow-y-auto"
+            style={{ 
+              zIndex: 999999,
+              animation: 'slideInRight 0.3s ease-out'
+            }}
           >
             {/* Header */}
-            <div className="flex items-center justify-between pb-6 border-b border-gray-200">
+            <div className="flex items-center justify-between p-6 pb-6 border-b border-gray-200 bg-gray-50">
               <a href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
                 <div className="relative w-10 h-10">
                   <Image
@@ -162,9 +179,9 @@ export default function Header() {
             </div>
 
             {/* Navigation Links */}
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+            <div className="flex-1 px-6">
+              <div className="divide-y divide-gray-200">
+                <div className="space-y-1 py-6">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
@@ -178,7 +195,7 @@ export default function Header() {
                 </div>
 
                 {/* Mobile CTA Section */}
-                <div className="py-6 space-y-4">
+                <div className="py-6 px-6 space-y-4 bg-gray-50">
                   <a
                     href="tel:0576095153"
                     className="flex items-center justify-center gap-3 rounded-xl bg-brand-800 px-6 py-4 text-base font-semibold text-white hover:bg-brand-900 transition-all duration-200 transform hover:scale-105"
@@ -199,7 +216,7 @@ export default function Header() {
                 </div>
 
                 {/* Contact Info */}
-                <div className="py-6">
+                <div className="py-6 px-6 bg-gray-100">
                   <div className="text-center">
                     <div className="text-sm text-gray-600 mb-2">بإشراف</div>
                     <div className="text-lg font-bold text-brand-800">أبو محمد</div>
